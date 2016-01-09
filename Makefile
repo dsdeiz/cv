@@ -1,5 +1,5 @@
 pdf:
-		xelatex resume.tex
+	xelatex resume.tex
 
 clean:
-		rm -f *.aux *.log *.out *.pdf
+	rm -f *.aux *.log *.out *.pdf
