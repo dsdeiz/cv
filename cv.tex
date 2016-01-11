@@ -9,11 +9,19 @@
 % For loading fonts.
 \usepackage{fontspec}
 
+% For the black triangle thing.
+\usepackage{amssymb}
+
+% For customizing the \itemize environment.
+\usepackage{enumitem}
+
 % Packages for formatting.
 \usepackage{parskip}
 
 % Some small packages.
 \usepackage{color}
+
+% For customizible tables.
 \usepackage{array}
 
 % For formatting of the A4 page.
@@ -25,19 +33,23 @@
 % Configurations for hyperref package.
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0, 0.2, 0.6}
-\hypersetup{colorlinks, breaklinks, urlcolor = linkcolour, linkcolor = linkcolour}
+\hypersetup{colorlinks, breaklinks, urlcolor=linkcolour, linkcolor=linkcolour}
 
 % Fonts configuration.
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[
-  SmallCapsFont = Fontin-SmallCaps.otf,
-  BoldFont = Fontin-Bold.otf,
-  ItalicFont = Fontin-Italic.otf
+  SmallCapsFont=Fontin-SmallCaps.otf,
+  BoldFont=Fontin-Bold.otf,
+  ItalicFont=Fontin-Italic.otf
 ]{Fontin.otf}
 
 % Customizations for \section.
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
+
+% The black triangle thing.
+\newlist{blacklist}{itemize}{1}
+\setlist[blacklist]{label=$\blacktriangleright$, font=\footnotesize, before=\footnotesize}
 
 % -----------------------------------------------------------------------------
 % BEGIN DOCUMENT
@@ -66,31 +78,39 @@
 \section{Work Experience}
 
 \begin{tabular}{r|p{11cm}}
-  \emph{Current}    & Drupal Developer at \textsc{Promet Source}, Cebu\\
-  \textsc{Jan 2012} & \footnotesize{Developed Drupal-based websites which includes custom module development, site building, and minor theme development.}\\
+  \textsc{Jan 2012-\emph{Current}} & Drupal Developer at \textsc{Promet Source}, \emph{Cebu}\\ &
+  \begin{blacklist}
+    \item I used tools such as Vagrant with chef, ansible, and/or a customized, pre-packaged box on our local setup.
+    \item I used Git to version control our projects.
+    \item I wrote tests and utilized BDD using Behat.
+    \item I used Jenkins and/or Travis for CI.
+    \item I developed with a composer-based build system for our Drupal-based websites.
+    \item I developed custom modules for Drupal-based websites which mostly includes eCommerce and API integration.
+    \item I worked as a front-end developer which uses AngularJS and Gulp, connects to a Silex application, and was able to use Express for quick mocking of our external service.
+  \end{blacklist}\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{Jan 2011-Jan 2012} & Drupal Developer/Themer at \textsc{Promet Solutions, Inc}, \emph{Telecommute}\\
+  \textsc{Jan 2011 - Jan 2012} & Drupal Developer/Themer at \textsc{Promet Solutions, Inc}, \emph{Telecommute}\\
                              &\footnotesize{Developed Drupal websites which includes custom module development, theming customizations, and site building.}\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{Oct 2009-Jan 2012} & Drupal/Wordpress Developer, \emph{Freelance}, \emph{Telecommute}\\
+  \textsc{Oct 2009 - Jan 2012} & Drupal/Wordpress Developer, \emph{Freelance}, \emph{Telecommute}\\
                              &\footnotesize{Developed and maintained websites which includes Drupal and Wordpress installation, configuration, and theme customization. Also involved in the development of small, custom Drupal modules.}\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{May 2010-Dec 2010} & Drupal Developer at \textsc{Taniwha Solutions}, \emph{Telecommute}\\
+  \textsc{May 2010 - Dec 2010} & Drupal Developer at \textsc{Taniwha Solutions}, \emph{Telecommute}\\
                              &\footnotesize{Developed Drupal websites which includes custom module development, theming customizations, and site building.}\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{Jul 2008-Sept 2009} & PHP Programming Support at \emph{Eversun}, Iloilo\\
+  \textsc{Jul 2008 - Sept 2009} & PHP Programming Support at \emph{Eversun}, Iloilo\\
                               &\footnotesize{Assisted in website development and maintenance which includes Drupal and Wordpress installation, configuration, and theme customization.}\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{Jun 2008-Jan 2009} & Freelance Web Designer, \emph{Freelance}, Iloilo\\
+  \textsc{Jun 2008 - Jan 2009} & Freelance Web Designer, \emph{Freelance}, Iloilo\\
                              &\footnotesize{Developed (x)HTML/CSS templates and assisted in website development and maintenance.}\\
   \multicolumn{2}{c}{}\\
 
-  \textsc{Nov 2007-Jan 2008} & On-the-Job Trainee at \emph{Sutherland Global Services}, Pampanga\\
+  \textsc{Nov 2007 - Jan 2008} & On-the-Job Trainee at \emph{Sutherland Global Services}, Pampanga\\
                              &\footnotesize{Worked as a customer service representative for Amazon.com and received product training for Microsoft Zune.}\\
 \end{tabular}
 
