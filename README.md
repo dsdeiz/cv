@@ -1,5 +1,7 @@
 # My LaTeX Resume
 
+[![Build Status](https://travis-ci.org/dsdeiz/cv.svg)](https://travis-ci.org/dsdeiz/cv)
+
 Template is from [Professional CV](https://www.sharelatex.com/templates/cv-or-resume/professional-cv).
 
 To build, install [MacTex](https://tug.org/mactex/) first &mdash; `brew cask install mactex`.
