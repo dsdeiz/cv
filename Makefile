@@ -2,4 +2,4 @@ pdf:
 	xelatex cv.tex
 
 clean:
-	rm -f *.aux *.log *.out *.pdf
+	rm -f *.aux *.log *.out
