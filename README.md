@@ -1,4 +1,4 @@
-# My LaTeX Resume
+# My LaTeX CV
 
 [![Build Status](https://travis-ci.org/dsdeiz/cv.svg)](https://travis-ci.org/dsdeiz/cv)
 
