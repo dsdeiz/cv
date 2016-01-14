@@ -1,0 +1,3 @@
+- [ ] Update descriptions for *Work Experience*.
+- [ ] Update *Technical Proficiencies*.
+- [ ] Add picture.
