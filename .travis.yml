@@ -3,8 +3,7 @@ dist: trusty
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -y texlive-full
+  - sudo apt-get install -y lacheck texlive-lang-italian texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
 script:
-  - make lint
   - make
