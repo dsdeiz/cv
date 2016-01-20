@@ -1,3 +1,2 @@
 - [ ] Update descriptions for *Work Experience*.
 - [ ] Add picture.
-- [ ] Update certifications.
